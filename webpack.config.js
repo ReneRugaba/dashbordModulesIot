@@ -23,6 +23,7 @@ Encore.setOutputPath('./public/assets')
 
 Encore.enableReactPreset()
 
+Encore.enableSassLoader()
 
 /*
 |--------------------------------------------------------------------------
