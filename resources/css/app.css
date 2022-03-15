@@ -1,0 +1,7 @@
+@import "./tailwind.scss";
+
+@layer  {
+    .container{
+        @apply min-h-full;
+    }
+}

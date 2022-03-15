@@ -24,6 +24,7 @@ Encore.setOutputPath('./public/assets')
 Encore.enableReactPreset()
 
 Encore.enableSassLoader()
+Encore.enablePostCssLoader()
 
 /*
 |--------------------------------------------------------------------------

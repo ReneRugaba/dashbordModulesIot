@@ -19,6 +19,7 @@
     "eslint-plugin-adonis": "^2.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "pino-pretty": "^7.5.3",
+    "postcss-loader": "^6.2.1",
     "prettier": "^2.5.1",
     "sass-loader": "^12.6.0",
     "tailwindcss": "^3.0.23",
@@ -28,6 +29,7 @@
   },
   "dependencies": {
     "@adonisjs/core": "^5.5.3",
+    "@adonisjs/lucid": "^17.1.0",
     "@adonisjs/repl": "^3.1.9",
     "@adonisjs/session": "^6.1.4",
     "@adonisjs/shield": "^7.0.8",
@@ -36,6 +38,7 @@
     "formik": "^2.2.9",
     "luxon": "^2.3.1",
     "node-sass": "^7.0.1",
+    "pg": "^8.7.3",
     "proxy-addr": "^2.0.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
