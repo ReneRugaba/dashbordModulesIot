@@ -18,8 +18,13 @@
 |
 */
 
+
 import Route from '@ioc:Adonis/Core/Route'
 
 Route.get('/', async ({ view }) => {
   return view.render('welcome')
+})
+
+Route.get('/file/:file', async({response,params})=>{// where :file is file name
+  return response.download(`./uploads/${params.file}`)
 })

@@ -17,10 +17,10 @@ export default class Vehicle extends BaseModel {
   public registration_nb:string
 
   @manyToMany(() => Module)
-  public skills: ManyToMany<typeof Module>
+  public vehicule_modules: ManyToMany<typeof Module>
 
   @column()
-  public type_vehicle_id:number
+  public vehicle_type_id:number
 
   @column.dateTime({ autoCreate: true })
   public release: DateTime

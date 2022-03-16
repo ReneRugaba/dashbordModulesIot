@@ -6,7 +6,7 @@ export default class RouteTraveleds extends BaseSchema {
   public async up () {
     this.schema.alterTable(this.tableName, (table) => {
       table
-      .integer('Current_year_id')
+      .integer('current_year_id')
       .unsigned()
       .references('current_years.id')
       .onDelete('CASCADE') 
