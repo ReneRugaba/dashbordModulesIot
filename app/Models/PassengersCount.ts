@@ -18,4 +18,7 @@ export default class PassengersCount extends BaseModel {
 
   @column()
   public vehicle_id:number
+
+  @column()
+  public current_year_id: number
 }
