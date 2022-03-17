@@ -1,7 +1,9 @@
-@import "./tailwind.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@layer  {
+@layer  components{
     .container{
-        @apply min-h-full;
+        @apply text-red-900 font-bold;
     }
 }
