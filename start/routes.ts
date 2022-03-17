@@ -28,3 +28,5 @@ Route.get('/', async ({ view }) => {
 Route.get('/file/:file', async({response,params})=>{// where :file is file name
   return response.download(`./uploads/${params.file}`)
 })
+
+Route.get('/modules','DashModulesController.getAllModules')
