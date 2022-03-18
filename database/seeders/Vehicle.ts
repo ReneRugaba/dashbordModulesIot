@@ -47,6 +47,18 @@ export default class VehicleSeeder extends BaseSeeder {
         release:DateTime.fromISO("2020-05-25T09:08:34.123"),
         vehicle_type_id:3,
       },
+      {
+        photo_path: "busModule.png",
+        registration_nb: "BUS-MAT" + Math.random().toString(36),
+        release:DateTime.fromISO("2020-05-25T09:08:34.123"),
+        vehicle_type_id:2,
+      },
+      {
+        photo_path: "busModule.png",
+        registration_nb: "BUS-MAT" + Math.random().toString(36),
+        release:DateTime.fromISO("2020-05-25T09:08:34.123"),
+        vehicle_type_id:3,
+      },
     ])
   }
 }

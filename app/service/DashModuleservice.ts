@@ -8,7 +8,7 @@ import DashModuleInterface from "./interface/DashModuleInterface";
 export default class DashModuleservice implements DashModuleInterface{
 
     getAllModule:(page: number)=> Promise<GetModuleDto>=async(page: number)=> {
-        let limit=6
+        let limit=8
 
         let getModuleDto:GetModuleDto={
             modulesArray:await Database.from(Module.table).orderBy("id","desc").paginate(page, limit),
