@@ -26,6 +26,13 @@ Encore.enableReactPreset()
 Encore.enableSassLoader()
 Encore.enablePostCssLoader()
 
+// Encore.configureBabel((babelConfig) => {
+//   babelConfig.plugins.push('styled-jsx/babel')
+//   babelConfig.presets.push('@babel/preset-flow')
+// }, {
+//   exclude: /node_modules/
+// })
+
 /*
 |--------------------------------------------------------------------------
 | Public URI
