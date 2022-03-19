@@ -7,11 +7,13 @@ import DashModuleInterface from "./interface/DashModuleInterface";
 
 export default class DashModuleservice implements DashModuleInterface{
 
-    getAllModule:(page: number)=> Promise<GetModuleDto>=async(page: number)=> {
+    getAllModule:(page: number,defective:boolean)=> Promise<GetModuleDto>=async(page: number,defective:boolean)=> {
         let limit=8
 
         let getModuleDto:GetModuleDto={
-            modulesArray:await Database.from(Module.table).orderBy("id","desc").paginate(page, limit),
+            modulesArray:!defective ? 
+            await Database.from(Module.table).orderBy("id","desc").paginate(page, limit):
+            await Database.from(Module.table).where("activate_status",defective).orderBy("id","desc").paginate(page, limit),
             typesModules:await TypeModule.all()
         }
         return  getModuleDto

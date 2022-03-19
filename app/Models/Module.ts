@@ -1,5 +1,5 @@
 import { DateTime } from 'luxon'
-import { BaseModel, column } from '@ioc:Adonis/Lucid/Orm'
+import { BaseModel, beforeCreate, column } from '@ioc:Adonis/Lucid/Orm'
 
 export default class Module extends BaseModel {
   @column({ isPrimary: true })
@@ -25,4 +25,9 @@ export default class Module extends BaseModel {
 
   @column.dateTime({ autoCreate: true, autoUpdate: true })
   public updatedAt: DateTime
+
+  @beforeCreate()
+  public static async createCustomNbCustomer(module:Module){
+    module.matricule="Mat-Mod"+Math.random().toString(36)
+  }
 }

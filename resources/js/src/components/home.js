@@ -4,6 +4,7 @@ import { CardModule } from "./cardModule"
 import { MdAddAlert, MdAddBox } from "react-icons/md";
 import { SyncLoader, SkewLoader, RingLoader } from 'react-spinners'
 import { Pagination } from "./pagination";
+import { ModalForm } from "./modalForm";
 
 export const Home = () => {
 
@@ -13,6 +14,7 @@ export const Home = () => {
     const [page, setPage] = useState(1)
     const [totalPage,setTotalPage]=useState(0)
     const [isLoading, setIsLoading] = useState(false)
+    const [showModal,setShowModal]=useState(false)
 
     useEffect(() => {
         getAllModuleDto(page)
@@ -22,7 +24,9 @@ export const Home = () => {
                 setTypeModule(res.data.typesModules)
                 setIsLoading(false)
             })
-    }, [page])
+    }, [page,showModal])
+
+
 
     const changePage=(page)=>{
         if(page<1){
@@ -47,10 +51,10 @@ export const Home = () => {
     }
 
     return (
-        <div>
+        <div className="h-screen">
             <h1 className="text-center font-bold text-2xl mt-11">Modules dashboard management:</h1>
             <div className="text-4xl flex justify-center mt-6">
-                <MdAddBox className="mr-2 text-green-800 cursor-pointer hover:animate-bounce" />
+                <MdAddBox onClick={()=>setShowModal(true)} className="mr-2 text-green-800 cursor-pointer hover:animate-bounce" />
                 <MdAddAlert className="text-red-800 animate-pulse hover:text-red-800 cursor-pointer" />
             </div>
             <div className="cardContainer">
@@ -61,6 +65,7 @@ export const Home = () => {
                 })}
             </div>
             <Pagination page={page}  setPage={changePage}/>
+            <ModalForm setShowModal={setShowModal} typeModule={typeModule} showModal={showModal}/>
         </div>
     )
 }
