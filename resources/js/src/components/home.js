@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react"
 import { useAxiosCenter } from "../../axioCenter"
 import { CardModule } from "./cardModule"
-import { MdAddAlert, MdAddBox } from "react-icons/md";
-import { SyncLoader, SkewLoader, RingLoader } from 'react-spinners'
+import { MdAddAlert, MdAddBox,MdListAlt } from "react-icons/md";
+import { RingLoader } from 'react-spinners'
 import { Pagination } from "./pagination";
 import { ModalForm } from "./modalForm";
+import {useNavigate} from 'react-router-dom'
 
 export const Home = () => {
 
@@ -15,16 +16,18 @@ export const Home = () => {
     const [totalPage,setTotalPage]=useState(0)
     const [isLoading, setIsLoading] = useState(false)
     const [showModal,setShowModal]=useState(false)
+    const [defective,setDefective]=useState(false)
+    const history=useNavigate()
 
     useEffect(() => {
-        getAllModuleDto(page)
+        getAllModuleDto(page,defective)
             .then(res => {
                 setTotalPage(res.data.modulesArray.meta.last_page)
                 setmoduleDto(res.data.modulesArray.data)
                 setTypeModule(res.data.typesModules)
                 setIsLoading(false)
             })
-    }, [page,showModal])
+    }, [page,showModal,defective])
 
 
 
@@ -37,10 +40,14 @@ export const Home = () => {
             page=page
         }
     
-        setIsLoading(true)
+      
         setPage(page)
-        setIsLoading(false)
+       
     }
+
+    
+
+   
 
     if (isLoading) {
         return (
@@ -55,7 +62,8 @@ export const Home = () => {
             <h1 className="text-center font-bold text-2xl mt-11">Modules dashboard management:</h1>
             <div className="text-4xl flex justify-center mt-6">
                 <MdAddBox onClick={()=>setShowModal(true)} className="mr-2 text-green-800 cursor-pointer hover:animate-bounce" />
-                <MdAddAlert className="text-red-800 animate-pulse hover:text-red-800 cursor-pointer" />
+                {!defective?(<MdAddAlert onClick={()=>setDefective(true)} className="text-red-800 animate-pulse hover:text-red-800 cursor-pointer" />):
+                (<MdListAlt onClick={()=>setDefective(false)} className="text-green-700"/>)}
             </div>
             <div className="cardContainer">
                 {moduleDto.map(card => {

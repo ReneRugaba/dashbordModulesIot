@@ -9,7 +9,7 @@ import {GetIntervaleDate} from '../../utilities/getIntervaleDate'
 export const CardModule = (module) => {
     
     return (
-        <Link to="#" className="linkCardModule">
+        <Link to={`/module/${module.module.id}`} className="linkCardModule">
             <img className="imgCardModule" src={`${ObjectConfigApp.imgBaseUrl}${module.module.photo_path}`} alt="" />
             <div className="divDescriptionCard">
                 <h5 className="titleCard">Matricule: {module.module.matricule}</h5>

@@ -1,5 +1,7 @@
 import { DateTime } from 'luxon'
-import { BaseModel, beforeCreate, column } from '@ioc:Adonis/Lucid/Orm'
+import { BaseModel, beforeCreate, column, HasMany, hasMany, HasOne, hasOne } from '@ioc:Adonis/Lucid/Orm'
+import LogsModule from './LogsModule'
+import ErrorsListed from './ErrorsListed'
 
 export default class Module extends BaseModel {
   @column({ isPrimary: true })
@@ -25,6 +27,12 @@ export default class Module extends BaseModel {
 
   @column.dateTime({ autoCreate: true, autoUpdate: true })
   public updatedAt: DateTime
+
+  @hasOne(() => LogsModule)
+  public profile: HasOne<typeof LogsModule>
+
+  @hasMany(() => ErrorsListed)
+  public errorsListed: HasMany<typeof ErrorsListed>
 
   @beforeCreate()
   public static async createCustomNbCustomer(module:Module){

@@ -7,11 +7,13 @@ export default class DashModulesController {
 
     getAllModules=async({request,response}:HttpContextContract)=>{
         let page=Number(request.input("page")||1)
-        let defective=Boolean(request.input("bool")||false)
+        let defective=Boolean(request.input("defective")||false)
         return response.status(200).json(await this.dashModuleserviceInterface.getAllModule(page,defective))
     }
 
     
-
+    getmoduleinformations=({}:HttpContextContract)=>{
+        
+    }
     
 }

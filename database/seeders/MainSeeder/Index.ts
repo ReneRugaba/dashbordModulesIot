@@ -23,6 +23,8 @@ export default class IndexSeeder extends BaseSeeder {
     await this.runSeeder(await import('../TravelTicket'))
     await this.runSeeder(await import('../PassengerCount'))
     await this.runSeeder(await import('../FuelConsumption'))
+    await this.runSeeder(await import('../LogsModule'))
+    await this.runSeeder(await import('../ErrorsListed'))
   }
 
 }

@@ -13,9 +13,13 @@ export default class DashModuleservice implements DashModuleInterface{
         let getModuleDto:GetModuleDto={
             modulesArray:!defective ? 
             await Database.from(Module.table).orderBy("id","desc").paginate(page, limit):
-            await Database.from(Module.table).where("activate_status",defective).orderBy("id","desc").paginate(page, limit),
+            await Database.from(Module.table).where("activate_status",!defective).orderBy("id","desc").paginate(page, limit),
             typesModules:await TypeModule.all()
         }
         return  getModuleDto
     }
+
+    // getmodulesinformations:(id: number)=> Promise<Module> =()=>{
+        
+    // }
 }
