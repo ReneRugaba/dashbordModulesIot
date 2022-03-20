@@ -32,7 +32,7 @@ export default class QuantitySeeder extends BaseSeeder {
         in_use:10,
         available:30,
         total:40,
-        type_module_id:5
+        type_module_id:3
       }
     ])
   }

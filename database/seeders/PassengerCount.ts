@@ -9,7 +9,7 @@ export default class PassengerCountSeeder extends BaseSeeder {
         nb_passengers_by_week:455,
         nb_passengers_by_month:1820,
         nb_passengers_by_year:21840,
-        vehicle_id:1,
+        module_id:1,
         current_year_id:1
       },
       {
@@ -17,7 +17,7 @@ export default class PassengerCountSeeder extends BaseSeeder {
         nb_passengers_by_week:175,
         nb_passengers_by_month:700,
         nb_passengers_by_year:8400,
-        vehicle_id:3,
+        module_id:3,
         current_year_id:1
       },
       {
@@ -25,7 +25,7 @@ export default class PassengerCountSeeder extends BaseSeeder {
         nb_passengers_by_week:525,
         nb_passengers_by_month:2100,
         nb_passengers_by_year:25200,
-        vehicle_id:2,
+        module_id:3,
         current_year_id:1
       },
       {
@@ -33,7 +33,55 @@ export default class PassengerCountSeeder extends BaseSeeder {
         nb_passengers_by_week:455,
         nb_passengers_by_month:1820,
         nb_passengers_by_year:21840,
-        vehicle_id:3,
+        module_id:4,
+        current_year_id:1
+      },
+      {
+        nb_passengers_by_day:25,
+        nb_passengers_by_week:175,
+        nb_passengers_by_month:700,
+        nb_passengers_by_year:8400,
+        module_id:5,
+        current_year_id:1
+      },
+      {
+        nb_passengers_by_day:75,
+        nb_passengers_by_week:525,
+        nb_passengers_by_month:2100,
+        nb_passengers_by_year:25200,
+        module_id:6,
+        current_year_id:1
+      },
+      {
+        nb_passengers_by_day:65,
+        nb_passengers_by_week:455,
+        nb_passengers_by_month:1820,
+        nb_passengers_by_year:21840,
+        module_id:7,
+        current_year_id:1
+      },
+      {
+        nb_passengers_by_day:25,
+        nb_passengers_by_week:175,
+        nb_passengers_by_month:700,
+        nb_passengers_by_year:8400,
+        module_id:8,
+        current_year_id:1
+      },
+      {
+        nb_passengers_by_day:75,
+        nb_passengers_by_week:525,
+        nb_passengers_by_month:2100,
+        nb_passengers_by_year:25200,
+        module_id:9,
+        current_year_id:1
+      },
+      {
+        nb_passengers_by_day:65,
+        nb_passengers_by_week:455,
+        nb_passengers_by_month:1820,
+        nb_passengers_by_year:21840,
+        module_id:10,
         current_year_id:2
       },
       {
@@ -41,7 +89,7 @@ export default class PassengerCountSeeder extends BaseSeeder {
         nb_passengers_by_week:175,
         nb_passengers_by_month:700,
         nb_passengers_by_year:8400,
-        vehicle_id:4,
+        module_id:11,
         current_year_id:2
       },
       {
@@ -49,7 +97,7 @@ export default class PassengerCountSeeder extends BaseSeeder {
         nb_passengers_by_week:525,
         nb_passengers_by_month:2100,
         nb_passengers_by_year:25200,
-        vehicle_id:1,
+        module_id:12,
         current_year_id:2
       },
       {
@@ -57,7 +105,7 @@ export default class PassengerCountSeeder extends BaseSeeder {
         nb_passengers_by_week:455,
         nb_passengers_by_month:1820,
         nb_passengers_by_year:21840,
-        vehicle_id:2,
+        module_id:1,
         current_year_id:3
       },
       {
@@ -65,7 +113,7 @@ export default class PassengerCountSeeder extends BaseSeeder {
         nb_passengers_by_week:175,
         nb_passengers_by_month:700,
         nb_passengers_by_year:8400,
-        vehicle_id:3,
+        module_id:2,
         current_year_id:3
       },
       {
@@ -73,7 +121,7 @@ export default class PassengerCountSeeder extends BaseSeeder {
         nb_passengers_by_week:525,
         nb_passengers_by_month:2100,
         nb_passengers_by_year:25200,
-        vehicle_id:4,
+        module_id:3,
         current_year_id:4
       },
       {
@@ -81,7 +129,7 @@ export default class PassengerCountSeeder extends BaseSeeder {
         nb_passengers_by_week:455,
         nb_passengers_by_month:1820,
         nb_passengers_by_year:21840,
-        vehicle_id:5,
+        module_id:4,
         current_year_id:4
       },
       {
@@ -89,7 +137,47 @@ export default class PassengerCountSeeder extends BaseSeeder {
         nb_passengers_by_week:175,
         nb_passengers_by_month:700,
         nb_passengers_by_year:8400,
-        vehicle_id:6,
+        module_id:5,
+        current_year_id:4
+      },
+      {
+        nb_passengers_by_day:65,
+        nb_passengers_by_week:455,
+        nb_passengers_by_month:1820,
+        nb_passengers_by_year:21840,
+        module_id:6,
+        current_year_id:3
+      },
+      {
+        nb_passengers_by_day:25,
+        nb_passengers_by_week:175,
+        nb_passengers_by_month:700,
+        nb_passengers_by_year:8400,
+        module_id:7,
+        current_year_id:3
+      },
+      {
+        nb_passengers_by_day:75,
+        nb_passengers_by_week:525,
+        nb_passengers_by_month:2100,
+        nb_passengers_by_year:25200,
+        module_id:8,
+        current_year_id:4
+      },
+      {
+        nb_passengers_by_day:65,
+        nb_passengers_by_week:455,
+        nb_passengers_by_month:1820,
+        nb_passengers_by_year:21840,
+        module_id:9,
+        current_year_id:4
+      },
+      {
+        nb_passengers_by_day:25,
+        nb_passengers_by_week:175,
+        nb_passengers_by_month:700,
+        nb_passengers_by_year:8400,
+        module_id:10,
         current_year_id:4
       },
       {
@@ -97,7 +185,7 @@ export default class PassengerCountSeeder extends BaseSeeder {
         nb_passengers_by_week:525,
         nb_passengers_by_month:2100,
         nb_passengers_by_year:25200,
-        vehicle_id:7,
+        module_id:11,
         current_year_id:5
       },
       {
@@ -105,7 +193,7 @@ export default class PassengerCountSeeder extends BaseSeeder {
         nb_passengers_by_week:525,
         nb_passengers_by_month:2100,
         nb_passengers_by_year:25200,
-        vehicle_id:1,
+        module_id:12,
         current_year_id:4
       },
       {
@@ -113,7 +201,7 @@ export default class PassengerCountSeeder extends BaseSeeder {
         nb_passengers_by_week:455,
         nb_passengers_by_month:1820,
         nb_passengers_by_year:21840,
-        vehicle_id:2,
+        module_id:1,
         current_year_id:6
       },
       {
@@ -121,9 +209,49 @@ export default class PassengerCountSeeder extends BaseSeeder {
         nb_passengers_by_week:175,
         nb_passengers_by_month:700,
         nb_passengers_by_year:8400,
-        vehicle_id:3,
+        module_id:2,
         current_year_id:6
-      }
+      },
+      {
+        nb_passengers_by_day:65,
+        nb_passengers_by_week:455,
+        nb_passengers_by_month:1820,
+        nb_passengers_by_year:21840,
+        module_id:3,
+        current_year_id:6
+      },
+      {
+        nb_passengers_by_day:25,
+        nb_passengers_by_week:175,
+        nb_passengers_by_month:700,
+        nb_passengers_by_year:8400,
+        module_id:4,
+        current_year_id:6
+      },
+      {
+        nb_passengers_by_day:75,
+        nb_passengers_by_week:525,
+        nb_passengers_by_month:2100,
+        nb_passengers_by_year:25200,
+        module_id:5,
+        current_year_id:6
+      },
+      {
+        nb_passengers_by_day:65,
+        nb_passengers_by_week:455,
+        nb_passengers_by_month:1820,
+        nb_passengers_by_year:21840,
+        module_id:6,
+        current_year_id:6
+      },
+      {
+        nb_passengers_by_day:25,
+        nb_passengers_by_week:175,
+        nb_passengers_by_month:700,
+        nb_passengers_by_year:8400,
+        module_id:7,
+        current_year_id:6
+      },
     ])
   }
 }

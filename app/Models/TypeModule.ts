@@ -11,7 +11,7 @@ export default class TypeModule extends BaseModel {
   public type_name:string
 
   @hasMany(()=>Module)
-  public type_module:HasMany<typeof Module>
+  public module:HasMany<typeof Module>
 
   @hasOne(() => Quantity)
   public profile: HasOne<typeof Quantity>

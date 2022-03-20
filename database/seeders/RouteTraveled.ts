@@ -10,7 +10,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:1,
-        vehicle_id:1
+        module_id:1
       },
       {
         km_by_day:56,
@@ -18,7 +18,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:1,
-        vehicle_id:2
+        module_id:2
       },
       {
         km_by_day:56,
@@ -26,7 +26,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:1,
-        vehicle_id:3
+        module_id:3
       },
       {
         km_by_day:56,
@@ -34,7 +34,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:1,
-        vehicle_id:4
+        module_id:4
       },
       {
         km_by_day:56,
@@ -42,7 +42,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:1,
-        vehicle_id:5
+        module_id:5
       },
       {
         km_by_day:56,
@@ -50,7 +50,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:1,
-        vehicle_id:6
+        module_id:6
       },
       {
         km_by_day:56,
@@ -58,7 +58,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:1,
-        vehicle_id:7
+        module_id:7
       },
       {
         km_by_day:56,
@@ -66,7 +66,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:2,
-        vehicle_id:1
+        module_id:8
       },
       {
         km_by_day:56,
@@ -74,7 +74,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:2,
-        vehicle_id:2
+        module_id:9
       },
       {
         km_by_day:56,
@@ -82,7 +82,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:2,
-        vehicle_id:3
+        module_id:10
       },
       {
         km_by_day:56,
@@ -90,7 +90,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:2,
-        vehicle_id:4
+        module_id:11
       },
       {
         km_by_day:56,
@@ -98,7 +98,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:2,
-        vehicle_id:5
+        module_id:12
       },
       {
         km_by_day:56,
@@ -106,7 +106,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:2,
-        vehicle_id:6
+        module_id:1
       },
       {
         km_by_day:56,
@@ -114,7 +114,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:2,
-        vehicle_id:6
+        module_id:2
       },
       {
         km_by_day:56,
@@ -122,7 +122,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:3,
-        vehicle_id:1
+        module_id:3
       },
       {
         km_by_day:56,
@@ -130,7 +130,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:3,
-        vehicle_id:2
+        module_id:4
       },
       {
         km_by_day:56,
@@ -138,7 +138,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:3,
-        vehicle_id:3
+        module_id:5
       },
       {
         km_by_day:56,
@@ -146,7 +146,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:3,
-        vehicle_id:4
+        module_id:6
       },
       {
         km_by_day:56,
@@ -154,7 +154,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:3,
-        vehicle_id:5
+        module_id:7
       },
       {
         km_by_day:56,
@@ -162,7 +162,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:3,
-        vehicle_id:6
+        module_id:8
       },
       {
         km_by_day:56,
@@ -170,7 +170,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:3,
-        vehicle_id:6
+        module_id:9
       },
       {
         km_by_day:56,
@@ -178,7 +178,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:4,
-        vehicle_id:1
+        module_id:10
       },
       {
         km_by_day:56,
@@ -186,7 +186,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:4,
-        vehicle_id:2
+        module_id:11
       },
       {
         km_by_day:56,
@@ -194,7 +194,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:4,
-        vehicle_id:3
+        module_id:12
       },
       {
         km_by_day:56,
@@ -202,7 +202,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:4,
-        vehicle_id:4
+        module_id:1
       },
       {
         km_by_day:56,
@@ -210,7 +210,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:4,
-        vehicle_id:5
+        module_id:2
       },
       {
         km_by_day:56,
@@ -218,7 +218,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:4,
-        vehicle_id:6
+        module_id:3
       },
       {
         km_by_day:56,
@@ -226,7 +226,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:4,
-        vehicle_id:6
+        module_id:4
       },
       {
         km_by_day:56,
@@ -234,7 +234,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:3,
-        vehicle_id:1
+        module_id:5
       },
       {
         km_by_day:56,
@@ -242,7 +242,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:3,
-        vehicle_id:2
+        module_id:6
       },
       {
         km_by_day:56,
@@ -250,7 +250,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:3,
-        vehicle_id:3
+        module_id:7
       },
       {
         km_by_day:56,
@@ -258,7 +258,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:3,
-        vehicle_id:4
+        module_id:8
       },
       {
         km_by_day:56,
@@ -266,7 +266,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:3,
-        vehicle_id:5
+        module_id:9
       },
       {
         km_by_day:56,
@@ -274,7 +274,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:3,
-        vehicle_id:6
+        module_id:10
       },
       {
         km_by_day:56,
@@ -282,7 +282,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:3,
-        vehicle_id:6
+        module_id:11
       },
       {
         km_by_day:56,
@@ -290,7 +290,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:5,
-        vehicle_id:1
+        module_id:12
       },
       {
         km_by_day:56,
@@ -298,7 +298,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:5,
-        vehicle_id:2
+        module_id:1
       },
       {
         km_by_day:56,
@@ -306,7 +306,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:5,
-        vehicle_id:3
+        module_id:2
       },
       {
         km_by_day:56,
@@ -314,7 +314,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:5,
-        vehicle_id:4
+        module_id:3
       },
       {
         km_by_day:56,
@@ -322,7 +322,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:5,
-        vehicle_id:5
+        module_id:5
       },
       {
         km_by_day:56,
@@ -330,7 +330,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:5,
-        vehicle_id:6
+        module_id:6
       },
       {
         km_by_day:56,
@@ -338,7 +338,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:5,
-        vehicle_id:6
+        module_id:7
       },
       {
         km_by_day:56,
@@ -346,7 +346,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:6,
-        vehicle_id:1
+        module_id:8
       },
       {
         km_by_day:56,
@@ -354,7 +354,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:6,
-        vehicle_id:2
+        module_id:9
       },
       {
         km_by_day:56,
@@ -362,7 +362,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:6,
-        vehicle_id:3
+        module_id:11
       },
       {
         km_by_day:56,
@@ -370,7 +370,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:6,
-        vehicle_id:4
+        module_id:12
       },
       {
         km_by_day:56,
@@ -378,7 +378,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:6,
-        vehicle_id:5
+        module_id:5
       },
       {
         km_by_day:56,
@@ -386,7 +386,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:6,
-        vehicle_id:6
+        module_id:6
       },
       {
         km_by_day:56,
@@ -394,7 +394,7 @@ export default class RouteTraveledSeeder extends BaseSeeder {
         km_by_month:1568,
         km_by_year:18816,
         current_year_id:6,
-        vehicle_id:6
+        module_id:7
       }
     ])
   }

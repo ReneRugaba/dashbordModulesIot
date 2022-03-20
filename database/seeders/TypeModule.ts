@@ -8,7 +8,6 @@ export default class TypeModuleSeeder extends BaseSeeder {
         {type_name:"fuel_consumptions_Iot"},
         {type_name:"passengers_counts_Iot"},
         {type_name:"traveltickets_Iot"},
-        {type_name:"traveltickets_Iot"}
       ])
   }
 }

@@ -13,12 +13,11 @@ export default class IndexSeeder extends BaseSeeder {
   }
 
   public async run() {
+    await this.runSeeder(await import('../VehicleType'))
+    await this.runSeeder(await import('../Vehicle'))
     await this.runSeeder(await import('../TypeModule'))
     await this.runSeeder(await import('../Quantity'))
     await this.runSeeder(await import('../Module'))
-    await this.runSeeder(await import('../VehicleType'))
-    await this.runSeeder(await import('../Vehicle'))
-    await this.runSeeder(await import('../VehicleModule')),
     await this.runSeeder(await import('../CurrentYear'))
     await this.runSeeder(await import('../TravelTicket'))
     await this.runSeeder(await import('../PassengerCount'))

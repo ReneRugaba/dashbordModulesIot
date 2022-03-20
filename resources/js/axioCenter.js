@@ -26,7 +26,16 @@ export const useAxiosCenter=()=>{
         
     }
 
+    const getModuleDetails=async(id)=>{
+        try {
+            return await axios.get(`${ObjectConfigApp.baseUrlApp}/modules/${id}`)
+        } catch (error) {
+            console.log(error.message)
+        }
+    }
+
     return {
-        getAllModuleDto
+        getAllModuleDto,
+        getModuleDetails
     }
 }

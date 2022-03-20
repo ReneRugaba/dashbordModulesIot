@@ -5,10 +5,10 @@ export default class Modules extends BaseSchema {
 
   public async up() {
     this.schema.alterTable(this.tableName, (table) => {
-      table.integer('type_module_id')
+      table.integer('vehicle_id')
         .unsigned()
-        .references('type_modules.id')
-      
+        .references('vehicles.id')
+        .onDelete('CASCADE')
     })
   }
 

@@ -30,3 +30,4 @@ Route.get('/file/:file', async({response,params})=>{// where :file is file name
 })
 
 Route.get('/modules','DashModulesController.getAllModules')
+Route.get('/modules/:id','DashModulesController.getmoduleinformations')

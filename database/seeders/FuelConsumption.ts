@@ -10,7 +10,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:1,
-        vehicle_id:1
+        module_id:1
       },
       {
         by_day:2,
@@ -18,7 +18,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:1,
-        vehicle_id:2
+        module_id:2
       },
       {
         by_day:2,
@@ -26,7 +26,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:1,
-        vehicle_id:3
+        module_id:3
       },
       {
         by_day:2,
@@ -34,7 +34,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:1,
-        vehicle_id:4
+        module_id:4
       },
       {
         by_day:2,
@@ -42,7 +42,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:1,
-        vehicle_id:5
+        module_id:5
       },
       {
         by_day:2,
@@ -50,7 +50,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:1,
-        vehicle_id:6
+        module_id:6
       },
       {
         by_day:2,
@@ -58,7 +58,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:2,
-        vehicle_id:1
+        module_id:7
       },
       {
         by_day:2,
@@ -66,7 +66,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:2,
-        vehicle_id:2
+        module_id:8
       },
       {
         by_day:2,
@@ -74,7 +74,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:2,
-        vehicle_id:3
+        module_id:9
       },
       {
         by_day:2,
@@ -82,7 +82,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:2,
-        vehicle_id:4
+        module_id:10
       },
       {
         by_day:2,
@@ -90,7 +90,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:2,
-        vehicle_id:5
+        module_id:11
       },
       {
         by_day:2,
@@ -98,7 +98,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:2,
-        vehicle_id:6
+        module_id:12
       },
       {
         by_day:2,
@@ -106,7 +106,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:3,
-        vehicle_id:1
+        module_id:1
       },
       {
         by_day:2,
@@ -114,7 +114,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:3,
-        vehicle_id:2
+        module_id:2
       },
       {
         by_day:2,
@@ -122,7 +122,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:3,
-        vehicle_id:3
+        module_id:3
       },
       {
         by_day:2,
@@ -130,7 +130,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:3,
-        vehicle_id:4
+        module_id:4
       },
       {
         by_day:2,
@@ -138,7 +138,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:3,
-        vehicle_id:5
+        module_id:5
       },
       {
         by_day:2,
@@ -146,7 +146,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:3,
-        vehicle_id:6
+        module_id:6
       },
       {
         by_day:2,
@@ -154,7 +154,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:4,
-        vehicle_id:1
+        module_id:7
       },
       {
         by_day:2,
@@ -162,7 +162,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:4,
-        vehicle_id:2
+        module_id:8
       },
       {
         by_day:2,
@@ -170,7 +170,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:4,
-        vehicle_id:3
+        module_id:9
       },
       {
         by_day:2,
@@ -178,7 +178,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:4,
-        vehicle_id:4
+        module_id:10
       },
       {
         by_day:2,
@@ -186,7 +186,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:4,
-        vehicle_id:5
+        module_id:11
       },
       {
         by_day:2,
@@ -194,7 +194,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:4,
-        vehicle_id:6
+        module_id:12
       },
       {
         by_day:2,
@@ -202,7 +202,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:5,
-        vehicle_id:1
+        module_id:1
       },
       {
         by_day:2,
@@ -210,7 +210,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:5,
-        vehicle_id:2
+        module_id:2
       },
       {
         by_day:2,
@@ -218,7 +218,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:5,
-        vehicle_id:3
+        module_id:3
       },
       {
         by_day:2,
@@ -226,7 +226,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:5,
-        vehicle_id:4
+        module_id:4
       },
       {
         by_day:2,
@@ -234,7 +234,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:5,
-        vehicle_id:5
+        module_id:5
       },
       {
         by_day:2,
@@ -242,7 +242,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:5,
-        vehicle_id:6
+        module_id:6
       },
       {
         by_day:2,
@@ -250,7 +250,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:6,
-        vehicle_id:1
+        module_id:7
       },
       {
         by_day:2,
@@ -258,7 +258,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:6,
-        vehicle_id:2
+        module_id:8
       },
       {
         by_day:2,
@@ -266,7 +266,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:6,
-        vehicle_id:3
+        module_id:9
       },
       {
         by_day:2,
@@ -274,7 +274,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:6,
-        vehicle_id:4
+        module_id:10
       },
       {
         by_day:2,
@@ -282,7 +282,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:6,
-        vehicle_id:5
+        module_id:11
       },
       {
         by_day:2,
@@ -290,7 +290,7 @@ export default class FuelConsumptionSeeder extends BaseSeeder {
         by_month:56,
         by_year:672,
         current_year_id:6,
-        vehicle_id:6
+        module_id:12
       }
     ])
   }

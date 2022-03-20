@@ -149,4 +149,14 @@
         dark:hover:text-white
         cursor-pointer;
     }
+
+    .containerDetails{
+        @apply h-screen grid lg:grid-cols-2 
+        lg:grid-rows-2
+        lg:gap-4 mt-6 mx-6 mb-6;
+    }
+
+    .containerCardDetails{
+        @apply w-full h-full shadow-md font-bold rounded-sm shadow-black;
+    }
 }

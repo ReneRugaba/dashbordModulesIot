@@ -13,6 +13,7 @@ export default class ModuleSeeder extends BaseSeeder {
         createdAt:DateTime.fromISO("2020-05-25T09:08:34.123"),
         updatedAt:DateTime.fromISO("2020-05-25T09:08:34.123"),
         type_module_id:1,
+        vehicle_id:1
       },
       {
         matricule:"Mat-Mod"+Math.random().toString(36),
@@ -22,6 +23,7 @@ export default class ModuleSeeder extends BaseSeeder {
         createdAt:DateTime.fromISO("2020-05-25T09:08:34.123"),
         updatedAt:DateTime.fromISO("2020-05-25T09:08:34.123"),
         type_module_id:2,
+        vehicle_id:2
       },
       {
         matricule:"Mat-Mod"+Math.random().toString(36),
@@ -31,6 +33,7 @@ export default class ModuleSeeder extends BaseSeeder {
         createdAt:DateTime.fromISO("2020-05-25T09:08:34.123"),
         updatedAt:DateTime.fromISO("2020-05-25T09:08:34.123"),
         type_module_id:4,
+        vehicle_id:3
       },
       {
         matricule:"Mat-Mod"+Math.random().toString(36),
@@ -39,7 +42,8 @@ export default class ModuleSeeder extends BaseSeeder {
         activate_status:true,
         createdAt:DateTime.fromISO("2020-05-25T09:08:34.123"),
         updatedAt:DateTime.fromISO("2020-05-25T09:08:34.123"),
-        type_module_id:5,
+        type_module_id:3,
+        vehicle_id:4
       },
       {
         matricule:"Mat-Mod"+Math.random().toString(36),
@@ -49,6 +53,7 @@ export default class ModuleSeeder extends BaseSeeder {
         createdAt:DateTime.fromISO("2020-05-25T09:08:34.123"),
         updatedAt:DateTime.fromISO("2020-05-25T09:08:34.123"),
         type_module_id:1,
+        vehicle_id:4
       },
       {
         matricule:"Mat-Mod"+Math.random().toString(36),
@@ -58,6 +63,7 @@ export default class ModuleSeeder extends BaseSeeder {
         createdAt:DateTime.fromISO("2020-05-25T09:08:34.123"),
         updatedAt:DateTime.fromISO("2020-05-25T09:08:34.123"),
         type_module_id:2,
+        vehicle_id:6
       },
       {
         matricule:"Mat-Mod"+Math.random().toString(36),
@@ -67,6 +73,7 @@ export default class ModuleSeeder extends BaseSeeder {
         createdAt:DateTime.fromISO("2020-05-25T09:08:34.123"),
         updatedAt:DateTime.fromISO("2020-05-25T09:08:34.123"),
         type_module_id:4,
+        vehicle_id:7
       },
       {
         matricule:"Mat-Mod"+Math.random().toString(36),
@@ -75,7 +82,8 @@ export default class ModuleSeeder extends BaseSeeder {
         activate_status:false,
         createdAt:DateTime.fromISO("2020-05-25T09:08:34.123"),
         updatedAt:DateTime.fromISO("2020-05-25T09:08:34.123"),
-        type_module_id:5,
+        type_module_id:2,
+        vehicle_id:8
       },
       {
         matricule:"Mat-Mod"+Math.random().toString(36),
@@ -85,6 +93,7 @@ export default class ModuleSeeder extends BaseSeeder {
         createdAt:DateTime.fromISO("2020-05-25T09:08:34.123"),
         updatedAt:DateTime.fromISO("2020-05-25T09:08:34.123"),
         type_module_id:1,
+        vehicle_id:9
       },
       {
         matricule:"Mat-Mod"+Math.random().toString(36),
@@ -94,6 +103,7 @@ export default class ModuleSeeder extends BaseSeeder {
         createdAt:DateTime.fromISO("2020-05-25T09:08:34.123"),
         updatedAt:DateTime.fromISO("2020-05-25T09:08:34.123"),
         type_module_id:2,
+        vehicle_id:1
       },
       {
         matricule:"Mat-Mod"+Math.random().toString(36),
@@ -103,6 +113,7 @@ export default class ModuleSeeder extends BaseSeeder {
         createdAt:DateTime.fromISO("2020-05-25T09:08:34.123"),
         updatedAt:DateTime.fromISO("2020-05-25T09:08:34.123"),
         type_module_id:4,
+        vehicle_id:2
       },
       {
         matricule:"Mat-Mod"+Math.random().toString(36),
@@ -111,7 +122,8 @@ export default class ModuleSeeder extends BaseSeeder {
         activate_status:true,
         createdAt:DateTime.fromISO("2020-05-25T09:08:34.123"),
         updatedAt:DateTime.fromISO("2020-05-25T09:08:34.123"),
-        type_module_id:5,
+        type_module_id:4,
+        vehicle_id:3
       },
     ])
   }

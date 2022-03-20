@@ -10,6 +10,10 @@ export default class PassengersCounts extends BaseSchema {
       table.integer('nb_passengers_by_week')
       table.integer('nb_passengers_by_month')
       table.integer('nb_passengers_by_year')
+      table.integer('module_id')
+            .unsigned()
+            .references('modules.id')
+            .onDelete('Cascade')
     })
   }
 

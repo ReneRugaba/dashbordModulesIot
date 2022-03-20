@@ -12,8 +12,8 @@ export default class DashModulesController {
     }
 
     
-    getmoduleinformations=({}:HttpContextContract)=>{
-        
+    getmoduleinformations=async({request}:HttpContextContract)=>{
+        return await this.dashModuleserviceInterface.getmodulesinformations(Number(request.params().id))
     }
     
 }

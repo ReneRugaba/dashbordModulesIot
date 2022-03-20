@@ -9,7 +9,7 @@ export default class TravelTicketSeeder extends BaseSeeder {
         by_week:525,
         by_month:2100,
         by_year:25200,
-        vehicle_id:1,
+        module_id:1,
         current_year_id:1
       },
       {
@@ -17,7 +17,7 @@ export default class TravelTicketSeeder extends BaseSeeder {
         by_week:175,
         by_month:700,
         by_year:8400,
-        vehicle_id:3,
+        module_id:3,
         current_year_id:1
       },
       {
@@ -25,7 +25,7 @@ export default class TravelTicketSeeder extends BaseSeeder {
         by_week:21,
         by_month:84,
         by_year:1008,
-        vehicle_id:2,
+        module_id:2,
         current_year_id:1
       },
       {
@@ -33,7 +33,7 @@ export default class TravelTicketSeeder extends BaseSeeder {
         by_week:525,
         by_month:2100,
         by_year:25200,
-        vehicle_id:3,
+        module_id:3,
         current_year_id:2
       },
       {
@@ -41,7 +41,7 @@ export default class TravelTicketSeeder extends BaseSeeder {
         by_week:175,
         by_month:700,
         by_year:8400,
-        vehicle_id:4,
+        module_id:4,
         current_year_id:2
       },
       {
@@ -49,7 +49,7 @@ export default class TravelTicketSeeder extends BaseSeeder {
         by_week:21,
         by_month:84,
         by_year:1008,
-        vehicle_id:5,
+        module_id:5,
         current_year_id:2
       },
       {
@@ -57,7 +57,7 @@ export default class TravelTicketSeeder extends BaseSeeder {
         by_week:525,
         by_month:2100,
         by_year:25200,
-        vehicle_id:6,
+        module_id:6,
         current_year_id:3
       },
       {
@@ -65,7 +65,7 @@ export default class TravelTicketSeeder extends BaseSeeder {
         by_week:175,
         by_month:700,
         by_year:8400,
-        vehicle_id:3,
+        module_id:3,
         current_year_id:3
       },
       {
@@ -73,7 +73,7 @@ export default class TravelTicketSeeder extends BaseSeeder {
         by_week:21,
         by_month:84,
         by_year:1008,
-        vehicle_id:2,
+        module_id:2,
         current_year_id:3
       },
       {
@@ -81,7 +81,7 @@ export default class TravelTicketSeeder extends BaseSeeder {
         by_week:525,
         by_month:2100,
         by_year:25200,
-        vehicle_id:1,
+        module_id:1,
         current_year_id:3
       },
       {
@@ -89,7 +89,7 @@ export default class TravelTicketSeeder extends BaseSeeder {
         by_week:175,
         by_month:700,
         by_year:8400,
-        vehicle_id:4,
+        module_id:4,
         current_year_id:3
       },
       {
@@ -97,7 +97,7 @@ export default class TravelTicketSeeder extends BaseSeeder {
         by_week:21,
         by_month:84,
         by_year:1008,
-        vehicle_id:5,
+        module_id:5,
         current_year_id:3
       },
       {
@@ -105,7 +105,7 @@ export default class TravelTicketSeeder extends BaseSeeder {
         by_week:175,
         by_month:700,
         by_year:8400,
-        vehicle_id:4,
+        module_id:4,
         current_year_id:4
       },
       {
@@ -113,7 +113,7 @@ export default class TravelTicketSeeder extends BaseSeeder {
         by_week:21,
         by_month:84,
         by_year:1008,
-        vehicle_id:5,
+        module_id:5,
         current_year_id:4
       },
       {
@@ -121,7 +121,7 @@ export default class TravelTicketSeeder extends BaseSeeder {
         by_week:21,
         by_month:84,
         by_year:1008,
-        vehicle_id:5,
+        module_id:5,
         current_year_id:5
       },
       {
@@ -129,7 +129,7 @@ export default class TravelTicketSeeder extends BaseSeeder {
         by_week:525,
         by_month:2100,
         by_year:25200,
-        vehicle_id:6,
+        module_id:6,
         current_year_id:5
       },
       {
@@ -137,7 +137,7 @@ export default class TravelTicketSeeder extends BaseSeeder {
         by_week:175,
         by_month:700,
         by_year:8400,
-        vehicle_id:3,
+        module_id:3,
         current_year_id:5
       },
       {
@@ -145,7 +145,7 @@ export default class TravelTicketSeeder extends BaseSeeder {
         by_week:21,
         by_month:84,
         by_year:1008,
-        vehicle_id:2,
+        module_id:2,
         current_year_id:5
       },
       {
@@ -153,7 +153,7 @@ export default class TravelTicketSeeder extends BaseSeeder {
         by_week:525,
         by_month:2100,
         by_year:25200,
-        vehicle_id:1,
+        module_id:1,
         current_year_id:5
       },
       {
@@ -161,7 +161,7 @@ export default class TravelTicketSeeder extends BaseSeeder {
         by_week:175,
         by_month:700,
         by_year:8400,
-        vehicle_id:4,
+        module_id:4,
         current_year_id:6
       },
       {
@@ -169,7 +169,7 @@ export default class TravelTicketSeeder extends BaseSeeder {
         by_week:21,
         by_month:84,
         by_year:1008,
-        vehicle_id:5,
+        module_id:5,
         current_year_id:6
       }
     ])
