@@ -9,7 +9,7 @@ export const DetailsCardModule = (props) => {
     return (
         <div className="containerCardDetails">
             {!props.module.activate_status && (
-                <div className='bg-green-700 w-6 p-1 mt-2 ml-2 rounded-full cursor-pointer'>
+                <div onClick={()=>props.updateStatusModuleMethode(props.module)} className='bg-green-700 w-6 p-1 flex justify-center mt-2 ml-2 rounded-full cursor-pointer'>
                     <MdPowerSettingsNew color={"white"} />
                 </div>)}
             <h1 className='text-center'>Matricule: <span className='bg-blue-700 p-1 rounded-md text-white font-bold'>{props.module.matricule}</span>

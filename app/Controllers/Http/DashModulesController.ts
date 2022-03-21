@@ -1,4 +1,5 @@
 import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
+import Module from 'App/Models/Module'
 import DashModuleservice from 'App/service/DashModuleservice'
 import DashModuleInterface from 'App/service/interface/DashModuleInterface'
 
@@ -20,4 +21,8 @@ export default class DashModulesController {
         console.log(request.file('cover_image'))
     }
     
+    updateStatusModule=async({request}:HttpContextContract)=>{
+        
+        return await this.dashModuleserviceInterface.updateModuleStatus(request.body() as Module)
+    }
 }

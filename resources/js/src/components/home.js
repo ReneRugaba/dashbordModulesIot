@@ -77,8 +77,11 @@ export const Home = () => {
             <h1 className="text-center font-bold text-2xl mt-11">Modules dashboard management:</h1>
             <div className="text-4xl flex justify-center mt-6">
                 <MdAddBox onClick={()=>setShowModal(true)} className="mr-2 text-green-800 cursor-pointer hover:animate-bounce" />
-                {!defective?(<MdAddAlert onClick={()=>setDefective(true)} className="text-red-800 animate-pulse hover:text-red-800 cursor-pointer" />):
-                (<MdListAlt onClick={()=>setDefective(false)} className="text-green-700"/>)}
+                {
+                !defective?moduleDto.filter(item=>item.activate_status===false).length>0&&(<MdAddAlert onClick={()=>setDefective(true)} className="text-red-800 animate-pulse hover:text-red-800 cursor-pointer" />)
+                :
+                (<MdListAlt onClick={()=>setDefective(false)} className="text-green-700"/>)
+                }
             </div>
             <div className="cardContainer">
                 {moduleDto.map(card => {

@@ -42,9 +42,18 @@ export const useAxiosCenter=()=>{
         }
     }
 
+    const updateStatusModule=async(module)=>{
+        try {
+            return await axios.put(`${ObjectConfigApp.baseUrlApp}/modules/`,module)
+        } catch (error) {
+            
+        }
+    }
+
     return {
         getAllModuleDto,
         getModuleDetails,
-        createModule
+        createModule,
+        updateStatusModule
     }
 }

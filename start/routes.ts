@@ -32,6 +32,8 @@ Route.get('/file/:file', async({response,params})=>{// where :file is file name
 Route.get('/modules','DashModulesController.getAllModules')
 Route.get('/modules/:id','DashModulesController.getmoduleinformations')
 Route.post('/modules','DashModulesController.createModule')
+Route.put('/modules','DashModulesController.updateStatusModule')
+
 Route.get('*',({response})=>{
   response.redirect('/')
 })

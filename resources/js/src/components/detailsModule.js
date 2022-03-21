@@ -6,6 +6,7 @@ import { RingLoader } from "react-spinners"
 import { GraphDetailsModule } from "./graphDetailsModule"
 import { VehicleModuleConcerned } from "./vehicleModuleConcerned"
 import { HistoryErrorModule } from "./historyErrorsModule"
+import { useToasts } from "react-toast-notifications"
 
 
 
@@ -13,7 +14,7 @@ export const DetailsModule = () => {
 
 
     const params = useParams()
-    const { getModuleDetails } = useAxiosCenter()
+    const { getModuleDetails,updateStatusModule } = useAxiosCenter()
     const [module, setModule] = useState({})
     const [dataTypeModuleVehicle,setDataTypeModuleVehicle]=useState({})
     const [currentYears,setCurrentYears]=useState({})
@@ -21,6 +22,8 @@ export const DetailsModule = () => {
     const [typesModule,setTypesModule]= useState({})
     const [vehicleDatails,setVehicleDatails]=useState({})
     const [vehicleType,setVehicleType]=useState({})
+    const [errorListed,setErrorListed]=useState({})
+    const {addToast}=useToasts()
 
     useEffect(() => {
         getModuleDetails(Number(params.id))
@@ -32,10 +35,25 @@ export const DetailsModule = () => {
                 setTypesModule(res.data.typesModule)
                 setVehicleDatails(res.data.vehicleDatails)
                 setVehicleType(res.data.vehicleType)
+                setErrorListed(res.data.errorListed)
+               
                 setIsLoadin(false)
             })
             .catch(err => console.log(err))
     }, [])
+
+    const updateStatusModuleMethode=(module)=>{
+        updateStatusModule(module)
+                .then(res=>{
+                    setModule(res.data)
+                    addToast('Module success restarted!',{
+                        appearance: 'success',
+                        autoDismiss: true,
+                    })
+                })
+                .catch(err=>console.log(err))
+    }
+
     if (isLoading) {
         return (
             <div className="max-h-full flex justify-center mt-14  text-green-800">
@@ -45,10 +63,10 @@ export const DetailsModule = () => {
     }
     return (
         <div className="containerDetails">
-            <DetailsCardModule module={module} typesModule={typesModule} />
+            <DetailsCardModule updateStatusModuleMethode={updateStatusModuleMethode} module={module} typesModule={typesModule} />
             <GraphDetailsModule currentYears={currentYears} dataArray={dataTypeModuleVehicle} />
             <VehicleModuleConcerned  currentModule={module} vehicleType={vehicleType} vehicleDatails={vehicleDatails}/>
-            <HistoryErrorModule/>
+            <HistoryErrorModule errorListed={errorListed}/>
         </div>
     )
 }
