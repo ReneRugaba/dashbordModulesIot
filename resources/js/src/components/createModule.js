@@ -7,8 +7,16 @@ import { ButtonGeneric } from '../shared/buttonGeneric'
 
 export const CreateModule = (props) => {
 
+    const createModuleform=(formObject)=>{
+        console.log(formObject)
+        formObject.type_module_id=Number(formObject.type_module_id)
+        formObject.activate_status=Boolean(formObject.activate_status)
+        props.createModule(formObject)
+                
+    }
+
     const schema = yup.object({
-        matricule: yup.string()
+        desciption: yup.string().matches(/^[^ !"`'#%&,:;<>=@{}~\$\(\)\*\+\/\\\?\[\]\^\|]+$/g,"Special characteres no allowed!!").min(6)
     })
 
     const arrayType = []
@@ -19,7 +27,7 @@ export const CreateModule = (props) => {
         <div>
             <h3 className="titleForm text-center font-bold mt-6 mb-4">Create Module</h3>
             <Formik
-                onSubmit={(val) => console.log(val)}
+                onSubmit={createModuleform}
                 initialValues={{
                     desciption: "",
                     photo_path: "",
@@ -27,9 +35,10 @@ export const CreateModule = (props) => {
                     type_module_id: Number("")
                 }}
                 validationSchema={schema}
+                
             >
                 {(({ handleChange }) => (
-                    <Form>
+                    <Form encType='multipart/form-data'>
                         <div className='grid h-5  gap-4 mx-4'>
                             <Field
                                 as="select"
@@ -69,7 +78,7 @@ export const CreateModule = (props) => {
 
 
                             <InputGeneric wigthInput="w-full"
-                                type="file" name="photo_path"
+                                type="file" handleChange={handleChange}  name="photo_path"
                                 label="path photo" />
 
                             <TextAreaGeneric wigthInput='md:w-full w-full' name="desciption" type='text' label='desciption' />

@@ -6,10 +6,10 @@ export default class PassengersCounts extends BaseSchema {
   public async up () {
     this.schema.createTable(this.tableName, (table) => {
       table.increments('id')
-      table.integer('nb_passengers_by_day')
-      table.integer('nb_passengers_by_week')
-      table.integer('nb_passengers_by_month')
-      table.integer('nb_passengers_by_year')
+      table.integer('by_day')
+      table.integer('by_week')
+      table.integer('by_month')
+      table.integer('by_year')
       table.integer('module_id')
             .unsigned()
             .references('modules.id')

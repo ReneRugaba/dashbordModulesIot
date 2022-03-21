@@ -5,19 +5,20 @@ import { MdAddAlert, MdAddBox,MdListAlt } from "react-icons/md";
 import { RingLoader } from 'react-spinners'
 import { Pagination } from "./pagination";
 import { ModalForm } from "./modalForm";
-import {useNavigate} from 'react-router-dom'
+import {  useToasts } from 'react-toast-notifications'
 
 export const Home = () => {
 
     const [moduleDto, setmoduleDto] = useState([])
     const [typeModule, setTypeModule] = useState([])
-    const { getAllModuleDto } = useAxiosCenter()
+    const { getAllModuleDto,createModule } = useAxiosCenter()
     const [page, setPage] = useState(1)
     const [totalPage,setTotalPage]=useState(0)
     const [isLoading, setIsLoading] = useState(false)
     const [showModal,setShowModal]=useState(false)
     const [defective,setDefective]=useState(false)
-    const history=useNavigate()
+    const [toogleToast,setToogleToast]=useState(true)
+    const {addToast}=useToasts()
 
     useEffect(() => {
         getAllModuleDto(page,defective)
@@ -25,6 +26,15 @@ export const Home = () => {
                 setTotalPage(res.data.modulesArray.meta.last_page)
                 setmoduleDto(res.data.modulesArray.data)
                 setTypeModule(res.data.typesModules)
+                if(res.data.modulesArray.data.filter(item=>item.activate_status===false && toogleToast).length>0){
+                    addToast(`${res.data.modulesArray.data.filter(item=>item.activate_status===false && toogleToast).length} modules are defective.Please be aware of the situation!!!`,{
+                        placement:"bottom-center",
+                        appearance: 'error',
+                        autoDismiss:true
+                    })
+                    setToogleToast(false)
+                }
+
                 setIsLoading(false)
             })
     }, [page,showModal,defective])
@@ -46,7 +56,11 @@ export const Home = () => {
     }
 
     
-
+    const createModuleform=(module)=>{
+        createModule(module).then(res=>{
+            console.log(res)
+        })
+    }
    
 
     if (isLoading) {
@@ -73,7 +87,7 @@ export const Home = () => {
                 })}
             </div>
             <Pagination page={page}  setPage={changePage}/>
-            <ModalForm setShowModal={setShowModal} typeModule={typeModule} showModal={showModal}/>
+            <ModalForm createModule={createModuleform} setShowModal={setShowModal} typeModule={typeModule} showModal={showModal}/>
         </div>
     )
 }

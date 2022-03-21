@@ -67,6 +67,7 @@
     "source-map-support": "^0.5.21",
     "styled-jsx": "^5.0.1",
     "transform-runtime": "^0.0.0",
+    "tw-elements": "^1.0.0-alpha11",
     "yup": "^0.32.11"
   }
 }

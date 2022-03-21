@@ -6,16 +6,16 @@ export default class LogsModule extends BaseModel {
   public id: number
 
   @column()
-  public datamesurement_by_day:number
+  public by_day:number
 
   @column()
-  public datamesurement_by_week:number
+  public by_week:number
 
   @column()
-  public datamesurement_by_month:number
+  public by_month:number
 
   @column()
-  public datamesurement_by_year:number
+  public by_year:number
 
   @column()
   public module_id:number

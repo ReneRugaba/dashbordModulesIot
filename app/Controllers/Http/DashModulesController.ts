@@ -15,5 +15,9 @@ export default class DashModulesController {
     getmoduleinformations=async({request}:HttpContextContract)=>{
         return await this.dashModuleserviceInterface.getmodulesinformations(Number(request.params().id))
     }
+
+    createModule=async({request}:HttpContextContract)=>{
+        console.log(request.file('cover_image'))
+    }
     
 }

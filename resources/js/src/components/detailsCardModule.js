@@ -13,8 +13,8 @@ export const DetailsCardModule = (props) => {
                     <MdPowerSettingsNew color={"white"} />
                 </div>)}
             <h1 className='text-center'>Matricule: <span className='bg-blue-700 p-1 rounded-md text-white font-bold'>{props.module.matricule}</span>
-
             </h1>
+            <h3 className='text-center mt-2'>Module type: <span className='bg-blue-700 p-1 rounded-md text-white font-bold'> {props.typesModule.type_name}</span></h3>
             <div className='w-full flex justify-center'>
                 <img src={`${ObjectConfigApp.imgBaseUrl}${props.module.photo_path}`} className="w-1/4 mt-2" />
             </div>

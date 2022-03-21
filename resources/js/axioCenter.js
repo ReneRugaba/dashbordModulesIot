@@ -34,8 +34,17 @@ export const useAxiosCenter=()=>{
         }
     }
 
+    const createModule=async(module)=>{
+        try {
+            return await axios.post(`${ObjectConfigApp.baseUrlApp}/modules/`,module)
+        } catch (error) {
+            console.log(error.message)
+        }
+    }
+
     return {
         getAllModuleDto,
-        getModuleDetails
+        getModuleDetails,
+        createModule
     }
 }

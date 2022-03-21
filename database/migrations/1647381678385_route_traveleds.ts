@@ -6,10 +6,10 @@ export default class RouteTraveleds extends BaseSchema {
   public async up() {
     this.schema.createTable(this.tableName, (table) => {
       table.increments('id')
-      table.float('km_by_day')
-      table.float('km_by_week')
-      table.float('km_by_month')
-      table.float('km_by_year')
+      table.float('by_day')
+      table.float('by_week')
+      table.float('by_month')
+      table.float('by_year')
       table.integer('module_id')
         .unsigned()
         .references('modules.id')

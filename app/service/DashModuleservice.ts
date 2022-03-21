@@ -52,7 +52,6 @@ export default class DashModuleservice implements DashModuleInterface {
                 currentYears: await CurrentYear.all()
             }
 
-            console.log(moduleDetailsDto.currentYears)
             return moduleDetailsDto
         
         

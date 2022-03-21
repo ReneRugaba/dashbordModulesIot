@@ -6,10 +6,10 @@ export default class LogsModules extends BaseSchema {
   public async up () {
     this.schema.createTable(this.tableName, (table) => {
       table.increments('id')
-      table.integer('datamesurement_by_day')
-      table.integer('datamesurement_by_week')
-      table.integer('datamesurement_by_month')
-      table.integer('datamesurement_by_year')
+      table.integer('by_day')
+      table.integer('by_week')
+      table.integer('by_month')
+      table.integer('by_year')
       table.integer('module_id')
           .unsigned()
           .references('modules.id')

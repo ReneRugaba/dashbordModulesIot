@@ -4,16 +4,16 @@ export default class RouteTraveled extends BaseModel {
   @column({ isPrimary: true })
   public id: number
 
-  public km_by_day: number
+  public by_day: number
 
   @column()
-  public km_by_week: number
+  public by_week: number
 
   @column()
-  public km_by_month: number
+  public by_month: number
 
   @column()
-  public km_by_year: number
+  public by_year: number
 
   @column()
   public module_id: number

@@ -11,7 +11,7 @@ import React from 'react'
  * @param InputGenInterface 
  * @returns JSX.Element
  */
-export const InputGeneric = ({ name, type, label, textColor, fontWeigth, bgInput, wigthInput, ...rest }) => {
+export const InputGeneric = ({ name, type, label, textColor, fontWeigth,handleChange, bgInput, wigthInput, ...rest }) => {
 
 
 
@@ -25,6 +25,7 @@ export const InputGeneric = ({ name, type, label, textColor, fontWeigth, bgInput
                 focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 ring-gray-400 z-0`}
                 name={name}
                 type={type}
+                onChange={handleChange}
                 {...rest} />
 
             <div className="font-bold text-red-500 px-5 py-2">
