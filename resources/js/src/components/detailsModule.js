@@ -19,6 +19,8 @@ export const DetailsModule = () => {
     const [currentYears,setCurrentYears]=useState({})
     const [isLoading, setIsLoadin] = useState(true)
     const [typesModule,setTypesModule]= useState({})
+    const [vehicleDatails,setVehicleDatails]=useState({})
+    const [vehicleType,setVehicleType]=useState({})
 
     useEffect(() => {
         getModuleDetails(Number(params.id))
@@ -28,6 +30,8 @@ export const DetailsModule = () => {
                 setDataTypeModuleVehicle(res.data.dataModule)
                 setCurrentYears(res.data.currentYears)
                 setTypesModule(res.data.typesModule)
+                setVehicleDatails(res.data.vehicleDatails)
+                setVehicleType(res.data.vehicleType)
                 setIsLoadin(false)
             })
             .catch(err => console.log(err))
@@ -43,7 +47,7 @@ export const DetailsModule = () => {
         <div className="containerDetails">
             <DetailsCardModule module={module} typesModule={typesModule} />
             <GraphDetailsModule currentYears={currentYears} dataArray={dataTypeModuleVehicle} />
-            <VehicleModuleConcerned/>
+            <VehicleModuleConcerned  currentModule={module} vehicleType={vehicleType} vehicleDatails={vehicleDatails}/>
             <HistoryErrorModule/>
         </div>
     )

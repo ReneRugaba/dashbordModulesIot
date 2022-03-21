@@ -1,6 +1,7 @@
 import Database from "@ioc:Adonis/Lucid/Database";
 import GetModuleDto from "App/Dto/getModuleDto";
 import ModuleDetailsDto from "App/Dto/moduleDetailsDto";
+import Vehicledto from "App/Dto/vehiculeDto";
 import CurrentYear from "App/Models/CurrentYear";
 import ErrorsListed from "App/Models/ErrorsListed";
 import LogsModule from "App/Models/LogsModule";
@@ -39,12 +40,17 @@ export default class DashModuleservice implements DashModuleInterface {
             }else{
                 searchData="traveltickets"
             }
+
+            let vehiculedetails:Vehicledto={
+                vehicle:vehicle,
+                modulearrayVehicle:vehicle?await Database.from(Module.table).where('vehicle_id',vehicle.id):[]
+            }
            
             
             let moduleDetailsDto: ModuleDetailsDto = {
                 module: module[0],
                 typesModule: typeModule,
-                vehicle: vehicle,
+                vehicleDatails: vehiculedetails,
                 vehicleType:await VehicleType.findBy('id',vehicle?.vehicle_type_id),
                 dataModule: await Database.from(LogsModule.table).where('module_id',module[0].id),
                 errorListed: await Database.from(ErrorsListed.table).where('modules_id',module[0].id),

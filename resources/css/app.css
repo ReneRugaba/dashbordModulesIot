@@ -157,6 +157,18 @@
     }
 
     .containerCardDetails{
-        @apply w-full h-full pt-4 shadow-md font-bold rounded-sm shadow-black;
+        @apply w-full h-full pt-4 text-xs  shadow-md font-bold rounded-sm shadow-black;
+    }
+
+    .containerVehicle{
+        @apply grid md:grid-cols-2 sm:grid-cols-1 justify-center;
+    }
+
+    .containerVehicleInfos{
+        @apply grid grid-cols-1  text-center text-xs pt-5;
+    }
+
+    .containerModuleInstall{
+        @apply text-xs pt-5 text-center;
     }
 }

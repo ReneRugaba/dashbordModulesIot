@@ -23,7 +23,7 @@ import Route from '@ioc:Adonis/Core/Route'
 
 Route.get('/', async ({ view }) => {
   return view.render('welcome')
-})
+}).as('home')
 
 Route.get('/file/:file', async({response,params})=>{// where :file is file name
   return response.download(`./uploads/${params.file}`)
@@ -32,3 +32,6 @@ Route.get('/file/:file', async({response,params})=>{// where :file is file name
 Route.get('/modules','DashModulesController.getAllModules')
 Route.get('/modules/:id','DashModulesController.getmoduleinformations')
 Route.post('/modules','DashModulesController.createModule')
+Route.get('*',({response})=>{
+  response.redirect('/')
+})

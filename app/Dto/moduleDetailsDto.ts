@@ -7,15 +7,15 @@ import PassengersCount from "App/Models/PassengersCount";
 import RouteTraveled from "App/Models/RouteTraveled";
 import Travelticket from "App/Models/TravelTicket";
 import TypeModule from "App/Models/TypeModule";
-import Vehicle from "App/Models/Vehicle";
 import VehicleType from "App/Models/VehicleType";
+import Vehicledto from "./vehiculeDto";
 
 
 export default class ModuleDetailsDto{
 
     module:Module|null
     typesModule:TypeModule|null
-    vehicle:Vehicle|null
+    vehicleDatails:Vehicledto|null
     dataModule:LogsModule[]|null
     errorListed:ErrorsListed[]|null
     dataTypeModuleVehicle:RouteTraveled[]|FuelConsumption[]|PassengersCount[]|Travelticket[]

@@ -26,6 +26,7 @@ export const Home = () => {
                 setTotalPage(res.data.modulesArray.meta.last_page)
                 setmoduleDto(res.data.modulesArray.data)
                 setTypeModule(res.data.typesModules)
+                
                 if(res.data.modulesArray.data.filter(item=>item.activate_status===false && toogleToast).length>0){
                     addToast(`${res.data.modulesArray.data.filter(item=>item.activate_status===false && toogleToast).length} modules are defective.Please be aware of the situation!!!`,{
                         placement:"bottom-center",

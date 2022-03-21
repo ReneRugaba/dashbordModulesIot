@@ -36,7 +36,7 @@ export const DetailsCardModule = (props) => {
                     </span>
                 </h3>
                 <h3 className='font-bold text-blue-600'>Description:</h3>
-                <p className='text-sm px-4'>{props.module.desciption}</p>
+                <p className='text-xs px-4'>{props.module.desciption}</p>
             </div>
         </div>
     )
