@@ -1,3 +1,4 @@
+import { Response } from '@adonisjs/core/build/standalone'
 import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import Module from 'App/Models/Module'
 import DashModuleservice from 'App/service/DashModuleservice'
@@ -17,8 +18,9 @@ export default class DashModulesController {
         return await this.dashModuleserviceInterface.getmodulesinformations(Number(request.params().id))
     }
 
-    createModule=async({request}:HttpContextContract)=>{
-        console.log(request.file('cover_image'))
+    createModule=async({request,response}:HttpContextContract)=>{
+        console.log(request.body())
+        return response.status(201).json(await this.dashModuleserviceInterface.createModule(request.body() as Module))
     }
     
     updateStatusModule=async({request}:HttpContextContract)=>{

@@ -13,4 +13,6 @@ export default interface DashModuleInterface{
     getmodulesinformations(id:number):Promise<ModuleDetailsDto|undefined>
 
     updateModuleStatus(module:Module):Promise<Module>
+
+    createModule(module:Module):Promise<Module>
 }

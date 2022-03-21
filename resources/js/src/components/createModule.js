@@ -16,7 +16,7 @@ export const CreateModule = (props) => {
     }
 
     const schema = yup.object({
-        desciption: yup.string().matches(/^[^ !"`'#%&,:;<>=@{}~\$\(\)\*\+\/\\\?\[\]\^\|]+$/g,"Special characteres no allowed!!").min(6)
+        desciption: yup.string().min(6)
     })
 
     const arrayType = []
@@ -31,8 +31,8 @@ export const CreateModule = (props) => {
                 initialValues={{
                     desciption: "",
                     photo_path: "",
-                    activate_status: Boolean(""),
-                    type_module_id: Number("")
+                    activate_status: "",
+                    type_module_id: ""
                 }}
                 validationSchema={schema}
                 
@@ -76,10 +76,6 @@ export const CreateModule = (props) => {
                                 <ErrorMessage name="activate_status" />
                             </div>
 
-
-                            <InputGeneric wigthInput="w-full"
-                                type="file" handleChange={handleChange}  name="photo_path"
-                                label="path photo" />
 
                             <TextAreaGeneric wigthInput='md:w-full w-full' name="desciption" type='text' label='desciption' />
                             <div className='grid grid-cols-2 gap-4 p-4'>

@@ -59,7 +59,7 @@ export const Home = () => {
     
     const createModuleform=(module)=>{
         createModule(module).then(res=>{
-            console.log(res)
+            setShowModal(false)
         })
     }
    

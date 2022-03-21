@@ -9,6 +9,7 @@ import Module from "App/Models/Module";
 import TypeModule from "App/Models/TypeModule";
 import Vehicle from "App/Models/Vehicle";
 import VehicleType from "App/Models/VehicleType";
+import { DateTime } from "luxon";
 import DashModuleInterface from "./interface/DashModuleInterface";
 
 
@@ -67,5 +68,14 @@ export default class DashModuleservice implements DashModuleInterface {
         module.activate_status = !module.activate_status
 
         return await (await (Module.findOrFail(module.id))).merge(module).save()
+    }
+
+    createModule=async(module:Module)=>{
+        module.updatedAt=DateTime.now()
+        module.createdAt=DateTime.now()
+        module.photo_path="moduleImage.jpeg"
+        module.activate_status=true
+
+        return await Module.create(module)
     }
 }
