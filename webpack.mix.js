@@ -10,5 +10,5 @@ mix.setPublicPath('public')
 
 // Add your assets here
 mix
-  .js('resources/js/app.js', 'scripts')
-  .css('resources/css/app.css', 'styles')
+  .js('resources/js/app.js', 'assets')
+  .css('resources/css/app.css', 'assets')
