@@ -104,7 +104,7 @@ export const http: ServerConfig = {
   |--------------------------------------------------------------------------
   */
   cookie: {
-    domain: 'shrouded-beyond-35493.herokuapp.com',
+    domain: '',
     path: '/',
     maxAge: '2h',
     httpOnly: true,
